@@ -1,0 +1,50 @@
+3. Uber cab booking fare 🚗
+If distance < 5 km → ₹150
+Else if < 15 km → ₹300
+Else → ₹800
+Add:
+Night charges after 11 PM
+
+
+
+
+import java.util.*;
+public class booking
+{
+public static void main(String[]args){
+System.out.println("Uber cab Booking");
+
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter Distance to travel");
+int distance=sc.nextInt();
+System.out.println("Enter the booking hour (0 to 11)");
+int hour=sc.nextInt();
+
+
+if(distance<5){
+int fare=150;
+}
+else if(distance<15){
+int fare=300;
+}
+
+else{
+int fare=800;
+}
+
+
+if(hour>11){
+System.out.println("night charges apply");
+fare1=fare+100;
+System.out.println("apply charges with extra night charges"+fare1);
+}
+else {
+System.out.println("apply charges"+fare);
+}
+
+
+
+
+
+}
+}
